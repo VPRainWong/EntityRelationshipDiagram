@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.erdplugin"
+		name="ERD plugin"
+		description="Sample plugin for generate erd"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.erdplugin.ERDPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.erdplugin.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.erdplugin.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.erdplugin.actionset1.ERDActionControl"
+					actionType="generalAction"
+      		name="ERD plugin"
+		      description="Sample plugin for generate erd"
+					style="normal"
+          icon="icon/plugin_icon.png"
+          tooltip="ER Diagram"
+					toolbarPath="com.vp.plugin.sample.erdplugin.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.erdplugin.ERDAction"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
